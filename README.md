@@ -9,6 +9,10 @@ The `essentials-v22-full` branch includes the graphics, audio, maps, and runtime
 - On Windows, run `Game.exe` from the project folder to play the base project.
 - Open `Game.rxproj` in RPG Maker XP to edit maps and events. Edit the Ruby scripts under `Data/Scripts/` and the game data under `PBS/`.
 
+## Following Pokémon sprites
+
+`Graphics/Characters/Followers/` and `Graphics/Characters/Followers shiny/` contain overworld sprites from Caruban's [Generation 9 Resource Pack v3.3.8](https://eeveeexpo.com/resources/1101/). The release page lists the contributors under Credits and links to the [full sprite credits](https://docs.google.com/spreadsheets/d/1T-KC-4XDOeFKq0Z6tfN6Sz4JIlpaK7B8A0lbmBg9fNY/edit). Enabling party Pokémon to follow the player requires a compatible follower script.
+
 ## Scripts
 
 The scripts no longer live in the Scripts.rxdata file. They have been extracted into separate files and placed in the Data/Scripts/ folder (and subfolders within). This makes it easier to work with other people and keep track of changes.
