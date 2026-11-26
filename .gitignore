@@ -1,19 +1,16 @@
-# Audio, Graphics and Plugins folders
-Audio/
-Graphics/
+# Local plugins and screenshots
 Plugins/
 Screenshots/
 
-# Data folder, but not Data/Scripts folder or messages_core.dat
+# Runtime data and editable scripts
 Data/*
-!Data/Scripts.rxdata
 !Data/Scripts/
-!Data/messages_core.dat
+!Data/*.rxdata
+!Data/*.dat
+Data/ScriptsBackup.rxdata
 
 # Files in the main project folder
 errorlog.txt
-Game.ini
-Game.rxproj
 RGSS*.dll
 
 # Common code editor folders & files

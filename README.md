@@ -2,15 +2,12 @@
 
 Based on Essentials v22.
 
-You can build your fangame on top of a fork of this repository. Doing so will let you update your fangame with improvements made to this repo as soon as they are made.
-
 ## Usage
 
-1. Fork this repo.
-2. Get a copy of Essentials v22 (a download link cannot be provided here).
-3. Clone your forked repo into the Essentials v22 folder, replacing the existing files with the ones from the repo.
+The `essentials-v22-full` branch includes the graphics, audio, maps, and runtime data from Maruno's [Essentials v22 release on Eevee Expo](https://eeveeexpo.com/essentials/), dated 21 November 2026.
 
-From here, you can edit this project to turn it into your fangame/develop mods. When this repo is updated, you can pull the changes to update your fork and get the updates into your fangame/modding environment.
+- On Windows, run `Game.exe` from the project folder to play the base project.
+- Open `Game.rxproj` in RPG Maker XP to edit maps and events. Edit the Ruby scripts under `Data/Scripts/` and the game data under `PBS/`.
 
 ## Scripts
 
@@ -29,14 +26,6 @@ This repo contains two script files in the main folder:
 
 You will need Ruby installed to run these scripts. The intention is to replace these with something more user-friendly.
 
-## Files not in the repo
+## Local files
 
-The .gitignore file lists the files that will not be included in this repo. These are:
-
-* The Audio/, Graphics/, Plugins/ and Screenshots/ folders and everything in them.
-* Everything in the Data/ folder, except for:
-  * The Data/Scripts/ folder and everything in there.
-  * Scripts.rxdata (a special version that just loads the individual script files).
-  * messages_core.dat, which contains common messages and is useful for translation projects.
-* A few files in the main project folder (two of the Game.xxx files, the RGSS dll file and errorlog.txt).
-* Temporary files.
+The project tracks `Audio/`, `Graphics/`, `Game.ini`, `Game.rxproj`, and the runtime files under `Data/`. The tracked `Data/Scripts.rxdata` loads the individual Ruby scripts. The ignore rules cover local plugins, screenshots, Ruby script backups, and the game error log.
